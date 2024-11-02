@@ -1,7 +1,7 @@
 package Serialization;
 
 import java.io.*;
-/**
+/*
  * When ChildClass implement the serializable interface and SupperClass not,
  * then ChildClass only support serialization and SupperClass no.
  */
@@ -15,15 +15,18 @@ class SupperClass2{
     }
     SupperClass2()
     {
-        /**
+        /*
          * Note that when ChildClass extends SupperClass and the implementation
          * of Serializable done on ChileClass then the Default SupperClass Constructor MUST be existed, else Exception raised.
          * and any value you provide for the variable like bellow will be populated in result.
          * if the variable not provided the result will be the default value for the variables.
          * Note in this case only ChildClass support the serialization and SupperClass No.
          */
-        /*i=60;
-        x=70;*/
+
+        /*
+        i=60;
+        x=70;
+        */
         System.out.println("SupperClass2 constructor called.");
     }
     @Override

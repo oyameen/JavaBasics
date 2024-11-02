@@ -2,7 +2,7 @@ package Serialization;
 
 import java.io.*;
 
-/**
+/*
  * When SupperClass implement the serializable interface and ChildClass extends SupperClass,
  * then ChildClass also support it by default.
  */
@@ -10,7 +10,7 @@ class SupperClass1 implements Serializable
 {
     int i;
     transient int x;
-    /**
+    /*
      * Note static field will be ignored during the serialization similar to transient
      */
     static int z = 100;

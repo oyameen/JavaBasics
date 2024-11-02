@@ -2,7 +2,7 @@ package Serialization;
 
 import java.io.*;
 
-/**
+/*
  * When SupperClass implement the serializable interface and ChildClass extends SupperClass,
  * and ChildClass Override write/read Object by throwing @{@link NotSerializableException}
  * then Serialization process cannot happen and will throw that exception in writeObject

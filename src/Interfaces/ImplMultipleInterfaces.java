@@ -10,6 +10,9 @@ interface I_Interface {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //// interface variable always they public static final. ///////////////////////////////////////////////////////////
     //// in case of using others modifiers likes private, protected, no access modifier will throw compilation error. //
+    //// Note that Interface variable have same role of public static method, so if you implement more than one ////////
+    //// interface have same variable name then will be there a diamond conflict, so solution is to use Interface //////
+    //// name to determine which one you mean, or you need to use. /////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static final int i = 0;
     int x = 1;
